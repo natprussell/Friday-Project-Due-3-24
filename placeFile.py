@@ -2,23 +2,22 @@ from tkinter import *
 from tkinter import ttk
 
 root= Tk()
+root.geometry('250x150')
 
-frame1= ttk.Frame(root, relief= SOLID)
-frame1.place()
 
-userName_label = ttk.Label(frame1, text="Name: ")
+userName_label = ttk.Label(root, text="Username: ")
 userName_label.place(x=20, y=20)
 
-userNameEntry = ttk.Entry(frame1)
-userNameEntry.place(x=150, y=20)
+userNameEntry = ttk.Entry(root)
+userNameEntry.place(x=80, y=20)
 
-password_label = ttk.Label(frame1, text="Email: ")
-password_label.place(x=20, y=40)  
+password_label = ttk.Label(root, text="Password: ")
+password_label.place(x=20, y=45)  
 
-passwordEntry = ttk.Entry(frame1)
-passwordEntry.place(x=150, y=40)  
+passwordEntry = ttk.Entry(root)
+passwordEntry.place(x=80, y=45)  
 
-btn = ttk.Button(frame1, text='Login')
-btn.place(x=70, y=100)
+btn = ttk.Button(root, text='Login')
+btn.place(x=100, y=70)
 
 root.mainloop()
