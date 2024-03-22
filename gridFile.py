@@ -3,8 +3,10 @@ from tkinter import ttk
 
 root= Tk()
 
-frame1= ttk.Frame(root, relief=SOLID, padding=(12,35))
+frame1= ttk.Labelframe(root, relief=SOLID, padding=(5,15))
 frame1.grid()
+frame1.config(padding=(12,35))
+frame1.config(text= "Sign Up")
 
 name_label = ttk.Label(frame1, text="Name: ")
 name_label.grid(row=0, column=0)
